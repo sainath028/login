@@ -10,11 +10,11 @@ pipeline {
         stage ('PULL CODE') {            
             steps {
                 dir('ui') {
-                    git branch: 'master', credentialsId: 'sainath', url: 'https://sainathkadaverugu@bitbucket.org/ui.git'
+                    git branch: 'master', credentialsId: 'sainath', url: 'https://sai@bitbucket.org/ui.git'
                 }
                
                 dir('api') {
-                    git branch: 'master', credentialsId: 'sainath', url: 'https://sainathkadaverugu@bitbucket.org/api.git'
+                    git branch: 'master', credentialsId: 'sainath', url: 'https://saiu@bitbucket.org/api.git'
                 }
             }
         }
